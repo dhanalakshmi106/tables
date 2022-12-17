@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML TABLE-4</title>
+    <style>
+        table{
+            text-align: center;
+            width: 400px;
+            height: 100px;
+            border-collapse: collapse;
+            border: 2px solid white;
+            margin-left: 400px;
+        }
+        td{
+            color: black;
+            font-size: 50px;
+        }
+        th{
+            font-size: 50px;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="20">
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th colspan="3" rowspan="2" bgcolor="darkcyan">A</th>
+            <th colspan="4" rowspan="2" bgcolor="brown">B</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <th>2</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th colspan="7" bgcolor="pink">C</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th colspan="6" bgcolor="green" rowspan="2">D</th>
+            <th bgcolor="black">E</th>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <th bgcolor="blue">F</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+    </table>
+    </body>
+</html>

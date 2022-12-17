@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML FORMS-1</title>
+    <style>
+        fieldset{
+            width: fit-content;
+            background-color: white;
+            position: relative;
+            left: 300px;
+            margin-top: 50px;
+        }
+        body{
+            background: linear-gradient(45deg,pink,blue,pink);
+        }
+        #button{
+            position: relative;
+            left: 30%;
+            background: linear-gradient(45deg,blue,pink);
+            width: 250px;
+            text-align: center;
+            margin: auto;
+        }
+        th{
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <table cellspacing="10px" cellpadding="5px">
+                <h1><b>Registration</b></h1>
+                <tr>
+                    <th><label for="full name">Full Name</label></th>
+                    <th><label for="user name">User Name</label></th>
+                </tr>
+                <tr>
+                    <th><input type="full name" placeholder="nter your name" id="full name"></th>
+                    <td><input type="user name" placeholder="nter your username" id="user name"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Emile</label></th>
+                    <th><label for="phone number">Phone Number</label></th>
+                </tr>
+                <tr>
+                    <th><input type="email" placeholder="nter your email" id="email"></th>
+                    <th><input type="phone number" placeholder="nter your phonenumber" id="phone number"></th>
+                </tr>
+                <tr>
+                    <th><label for="password">Passward</label></th>
+                    <th><label for="confirm password">Confirm Passward</label></th>
+                </tr>
+                <tr>
+                    <th><input type="password" placeholder="nter your password" id="password"></th>
+                    <th><input type="onfirm password" placeholder="onfirm your password" id="onfirm password"></th>
+                </tr>
+                <tr cellspacing="10px">
+                    <td><b><label for="gender">Gender</label></b><br><br>
+                    <input type="radio" name="gender" id="gender">Male
+                    <input type="radio" name="gender" id="gender">Female
+                    <input type="radio" name="gender" id="gender">prefer not to say<br><br>
+                    <input type="button" value="Registration" id="button">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    </body>
+</html>

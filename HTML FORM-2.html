@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html form-2</title>
+    <style>
+        form{
+            width: fit-content;
+            background-color: blue;
+            position: relative;
+            left: 320px;
+        }
+        button{
+            color: white;
+            margin-left: 100px;
+            border: 1px solid black;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        #btn1{
+            background-color: green;
+        }
+        #btn2{
+            background-color: purple;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>PROJCT MANAGMENT</u></h1>
+    <form>
+        <fieldset>
+            <table cellspacing="20px" cellpadding="10px">
+                <tr>
+                    <th><label for="project name">Project Name</label></th>
+                    <td><input type="text" size="30px" placeholder="project name" id="project name">
+                    </td>
+                </tr>
+                <tr>
+                <td><label for="assigned to">Assigned To</label></td>
+                    <td><input type="text" placeholder="mary" id="asigned to">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="start date">Start Date</label></td>
+                    <td><input type="datetime-local" id="start date">
+                </tr>
+                <tr>
+                    <td><label for="end date">End Date</label></td>
+                    <td><input type="datetime-local" id="end date">
+                </tr>
+                <tr>
+                    <td><label for="priority">Priority</label></td>
+                    <td><input type="radio" name="priority" id="priority">High
+                    <input type="radio" name="priority" id="priority">Average
+                    <input type="radio" name="priority" id="priority">Low</td>
+                </tr>
+                <tr>
+                    <td><label for="description">DESCRIPTION</label></td>
+                    <td><textarea name="" id="description" cols="50" rows="5"></textarea></td>
+                </tr>
+            </table>
+            <button type="submit" id="btn1">submit</button>
+            <button type="reset" id="btn2">reset</button>
+        </fieldset>
+    </form>
+    </body>
+</html>

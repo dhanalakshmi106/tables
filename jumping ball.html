@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>animation</title>
+   <style>
+    body{
+        margin-top: 300px;
+        margin-left: 10px;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 2px solid black;
+        background: repeating-conic-gradient(red,blue,green,pink,purple,yellow);
+        animation-duration: 10s;
+        animation-name: jspider;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        position: relative;
+    }
+    @keyframes jspider{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        12%{
+            top: -100px;
+            left: 100px;
+            transform: rotate(0);
+        }
+        24%{
+            top: -300px;
+            left: 300px;
+            border-top-right-radius: 75px;
+        }
+        36%{
+            top: 0px;
+            left: 400px;
+        }
+        48%{
+            top: -300px;
+            left: 450px;
+        }
+        60%{
+            top: 0px;
+            left: 500px;
+        }
+        72%{
+            top: -300px;
+            left: 550px;
+        }
+        86%{
+            top: 0px;
+            left: 600px;
+        }
+        96%{
+            top: -300px;
+            left: 650px;
+        }
+    }
+   </style>
+</head>
+<body>
+    <div></div>
+    </body>
+</html>
